@@ -1,268 +1,268 @@
 # Given a scenario, modify enterprise capabilities to enhance security
-## Ports 
+## 1. Ports 
 Logical communication endpoints on a computer or server
 
 
-## Port 21 
+## 2.  Port 21 
 FTP(File transfer protocol) - TCP
 
 
-## Port 22
+## 3. Port 22
 SSH, SCP, SFTP - TCP
 
 
-## Port 23
+## 4. Port 23
 Telnet - TCP
 
 
-## Port 25
+## 5.Port 25
 SMTP (Simple Mail Transfer Protocol) - TCP
 
 
-## Port 53
+## 6. Port 53
 DNS (Domain Name System) - TCP/UDP
 
 
-## Port 69
+## 7. Port 69
 TFTP (Trivial File Transfer Protocol) - UDP
 
 
-## Port 80
+## 8. Port 80
 HTTP. - TCP
 
 
-## Port 88
+## 9. Port 88
 Kerberos - UDP
 
 
-## Port 110
+## 10. Port 110
 POP3 (Post Office Protocol) - TCP
 
 
-## Port 119
+## 11. Port 119
 NNTP (Network News Transfer Protocol) - TCP
 
 
-## Port 135
+## 12. Port 135
 RPC(Remote Procedure Call) - TCP/UDP
 
 
-## Port 137/138/139
+## 13. Port 137/138/139
 NetBIOS
 (TCP / UDP)
 
 
-## Port 143
+## 14. Port 143
 IMAP (Internet Message Access Protocol) - TCP
 
 
-## Port 161
+## 15. Port 161
 SNMP (Simple Network Management Protocol) - UDP
 
 
-## Port 162
+## 16. Port 162
 SNMP Trap - UDP
 
 
-## Port 389
+## 17. Port 389
 LDAP (Lightweight Directory Access Protocol) - TCP
 
 
-## Port 443
+## 18. Port 443
 HTTPS (HTTP SECURE) - TCP
 
 
-## Port 445
+## 19. Port 445
 SMB (Server Message Block) - TCP
 
 
-## Port 465, 587
+## 20. Port 465, 587
 SMTPS (SMTP SECURE) - TCP
 
 
-## Port 514
+## 21. Port 514
 Syslog - UDP
 
 
-## Port 636
+## 22. Port 636
 LDAPS (LDAP SECURE) - TCP
 
 
-## Port 993
+## 23. Port 993
 IMAPS (IMAP over SSL/TLS) - TCP
 
 
-## Port 995
+## 24. Port 995
 POP3S (POP3 over SSL/TLS) - TCP
 
 
-## Port 1433
+## 25. Port 1433
 Microsoft SQL - TCP
 
 
-## Port 1645, 1646
+## 26. Port 1645, 1646
 RADIUS (Remote Authentication) - TCP
 
 
-## Port 1812, 1813
+## 27. Port 1812, 1813
 RADIUS UDP - UDP
 
 
-## Port 3389
+## 28. Port 3389
 RDP (Remote Desktop Protocol) - TCP
 
 
-## Port 6514
+## 29. Port 6514
 Syslog TLS - TCP
 
 
-## Firewall
+## 30. Firewall
 Network security device or software that monitors and controls network traffic based on security rules
 
 
-## Screened Subnet
+## 31. Screened Subnet
 Acts as a security barrier between external untrusted networks and internal trusted networks using a protected host with security measures like a packer-filtering firewall
 
 
-## Access Control Lists - Firewalls
+## 32. Access Control Lists - Firewalls
 Consist of permit and deny statements - often based on port numbers - control the flow of traffic into and out of networks
 
 
-## Configuring ACLs
+## 33. Configuring ACLs
 Place most specific rules at the top with general rules at the bottom - executes top down and stops when a statement fits
 
 
-## ACL Rules
+## 34. ACL Rules
 Consist of: Type of traffic - source of traffic - destination of traffic - action to be taken against the traffic
 
 
-## Intrusion Detection System
+## 35. Intrusion Detection System
 Logs or alerts that it found something suspicious or malicious
 
 
-## Signature Based IDS
+## 36. Signature Based IDS
 Analyzes traffic based on defined signatures and can only recognize attacks based on previously identified attacks in its database
 
 
-## Anomaly-Based IDS
+## 37. Anomaly-Based IDS
 Analyzes traffic and compares it to a normal baseline of traffic to determine whether a thread is occurring
 
 
-## Intrusion Prevention Systems
+## 38. Intrusion Prevention Systems
 Logs, alerts, and takes action when it finds something suspicious or malicious
 
 
-## Group Policy
+## 39. Group Policy
 A set of rules and policies that can be applied to users or computer accounts within an operating system
 
 
-## Baselining
+## 40. Baselining
 The process of measuring changes in networking, hardware, software environment
 
 
-## SELinux (Security Enhanced Linux)
+## 41. SELinux (Security Enhanced Linux)
 A security mechanism that provides an additional layer of security for linux distributions - enforces Mandatory Access Control
 
 
-## Mandatory Access Controls (MAC)
+## 42. Mandatory Access Controls (MAC)
 Restricts access to system resources based on subject clearance and object labels
 
 
-## Contexts in SELinux
+## 43. Contexts in SELinux
 User Context, Role Context, Type Context
 
 
-## User Context
+## 44. User Context
 Defines which users can access an object
 
 
-## Role Context
+## 45. Role Context
 Determines which roles can access an object
 
 
-## Type Context
+## 46. Type Context
 Essential for fine-grained access control, grouping objects with similar security characteristics
 
 
-## Network Access Control (NAC)
+## 47. Network Access Control (NAC)
 Used to protect networks from both known and unknown devices by scanning devices to assess their security status before granting network access
 
 
-## Web Filter
+## 48. Web Filter
 Web filtering or content filtering is used to control or restrict the content users can access on the internet
 
 
-## Agent-based Web Filtering
+## 49.Agent-based Web Filtering
 Involves installing an agent on each device - monitors and enforces web usage policies - effective for remote and mobile workers
 
 
-## Centralized Proxy
+## 50. Centralized Proxy
 Uses a proxy server as an intermediary between an organization's end users and the internet - evaluates and controls web requests based on policies
 
 
-## URL Scanning
+## 51. URL Scanning
 Analyzes websites URLs to check for matches in a database of known malicious websites
 
 
-## Content Categorization
+## 52. Content Categorization
 Classifies websites into categories and blocks or allows categories based on policies
 
 
-## Block Rules
+## 53. Block Rules
 Specific guidelines set by organizations to prevent access to certain websites or categories, often used to address security threats
 
 
-## Reputation-Based Filtering
+## 54. Reputation-Based Filtering
 Blocks or allows websites based on a reputation score determined by third-party services
 
 
-## DNS Filtering
+## 55. DNS Filtering
 blocks access to specific websites by preventing the translation of domain names to their IP addresses - If requested domain is on block list the ip address is withheld
 
 
-## Email Security
+## 56. Email Security
 Encompasses techniques and protocols to protect email content, accounts, and infrastructure from unauthorized access, loss, or compromise
 
 
-## Domain Keys Identified Mail (DKIM)
+## 57. Domain Keys Identified Mail (DKIM)
 Allows the receiver to verify the source and integrity of an email by adding a digital signature to the email headers
 
 
-## Sender Policy Framework (SPF)
+## 58. Sender Policy Framework (SPF)
 Prevents sender address forgery by verifying the sender's IP against authorized IPs listed in the sender's domain DNS records
 
 
-## Domain-based Message Authentication, Reporting and Conformance (DMARC)
+## 59. Domain-based Message Authentication, Reporting and Conformance (DMARC)
 Detects and prevent email spoofing by setting policies for email sending and handling failures - can work with DKIM, SPF, or both
 
 
-## Email Gateway Protocol Config
+## 60. Email Gateway Protocol Config
 Serve as entry/exit point for emails, facilitating secure and efficient email transmission - SMTP utilized for sending/receiving emails - handles email routing, security, policy enforcement, and encryption
 
 
-## Endpoint Detection and Response (EDR)
+## 61. Endpoint Detection and Response (EDR)
 Category of security tools that monitor endpoint and network events and record the information in a central database - collects data from endpoints, sends data to a centralized security solution, analyzes data for threats and responds as necessary - focuses on endpoints
 
 
-## File Integrity Monitoring
+## 62. File Integrity Monitoring
 Validates the integrity of operating system and application software files by comparing their current state with a known, good baseline
 
 
-## Extended Detection and Response (XDR)
+## 63. Extended Detection and Response (XDR)
 Security strategy that integrates multiple protection technologies into a single platform to improve detection accuracy and simplify the incident response process - more comprehensive solution and expands beyond endpoints
 
 
-## User Behavior Analytics
+## 64. User Behavior Analytics
 Advanced cybersecurity strategy that uses big data and machine learning to analyze user behaviors for detecting security threats - focus on understanding user behavior to identify patterns
 
 
-## Secure Protocols
+## 65. Secure Protocols
 Choose secure protocols to protect data in transit - example: HTTP vs HTTPS, FTP vs SFTP, Telnet vs SSH
 
 
-## Port Selection
+## 66. Port Selection
 Ports are logical constructs used to identify processes or services on a system
 
 
-## Transport Methods
+## 67. Transport Methods
 TCP - connection-oriented ensuring data delivery without errors - UDP: best effort but is connectionless so no guarantee
